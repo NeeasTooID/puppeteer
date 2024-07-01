@@ -20,6 +20,48 @@ All notable changes to this project will be documented in this file. See [standa
   * dependencies
     * @puppeteer/browsers bumped from 1.5.1 to 1.6.0
 
+## [22.12.1](https://github.com/puppeteer/puppeteer/compare/puppeteer-core-v22.12.0...puppeteer-core-v22.12.1) (2024-06-26)
+
+
+### Bug Fixes
+
+* execution contexts might be created before previous is destroyed ([#12666](https://github.com/puppeteer/puppeteer/issues/12666)) ([db642d1](https://github.com/puppeteer/puppeteer/commit/db642d1d6975a9b12700a471f6cacc8daf6bd04d))
+* reset the viewport after taking a fullPage screenshot if defaultViewport is null ([#12650](https://github.com/puppeteer/puppeteer/issues/12650)) ([0a32283](https://github.com/puppeteer/puppeteer/commit/0a32283cfccba306fa20dc5b5c31487a6d8fb201))
+* roll to Chrome 126.0.6478.126 (r1300313) ([#12656](https://github.com/puppeteer/puppeteer/issues/12656)) ([32ed82c](https://github.com/puppeteer/puppeteer/commit/32ed82c623905755944b1cf2d9e0cd9d952c8f94))
+* use RAF-based polling for ARIA selectors ([#12664](https://github.com/puppeteer/puppeteer/issues/12664)) ([56d1d3f](https://github.com/puppeteer/puppeteer/commit/56d1d3f8b731d18c6aa9cc3d6de9c722b93a7a1e))
+
+## [22.12.0](https://github.com/puppeteer/puppeteer/compare/puppeteer-core-v22.11.2...puppeteer-core-v22.12.0) (2024-06-21)
+
+
+### Features
+
+* support AbortSignal in page.waitForRequest/Response/NetworkIdle/Frame ([#12621](https://github.com/puppeteer/puppeteer/issues/12621)) ([54ecea7](https://github.com/puppeteer/puppeteer/commit/54ecea7db5180ec024d81a7ac14c73387550d1d6))
+* **webdriver:** support for `PageEvent.Popup` ([#12612](https://github.com/puppeteer/puppeteer/issues/12612)) ([293926b](https://github.com/puppeteer/puppeteer/commit/293926b61a3552f9ec7e9a62383688e775f12df0))
+
+
+### Bug Fixes
+
+* **performance:** clear targets on browser context close ([#12609](https://github.com/puppeteer/puppeteer/issues/12609)) ([6609758](https://github.com/puppeteer/puppeteer/commit/660975824ac94b85a260e99b95db0a11bb5a2e07))
+* roll to Chrome 126.0.6478.62 (r1300313) ([#12615](https://github.com/puppeteer/puppeteer/issues/12615)) ([80dd131](https://github.com/puppeteer/puppeteer/commit/80dd1316a09e87dda65f68e5cbe299d335147599))
+* roll to Chrome 126.0.6478.63 (r1300313) ([#12632](https://github.com/puppeteer/puppeteer/issues/12632)) ([20ed8fc](https://github.com/puppeteer/puppeteer/commit/20ed8fcb1415501525368305a9bc509af03d63ff))
+
+## [22.11.2](https://github.com/puppeteer/puppeteer/compare/puppeteer-core-v22.11.1...puppeteer-core-v22.11.2) (2024-06-18)
+
+
+### Bug Fixes
+
+* **deps:** bump ws to 8.17.1 ([#12605](https://github.com/puppeteer/puppeteer/issues/12605)) ([49bcb25](https://github.com/puppeteer/puppeteer/commit/49bcb2537e45c903e6c1d5d360b0077f0153c5d2))
+
+## [22.11.1](https://github.com/puppeteer/puppeteer/compare/puppeteer-core-v22.11.0...puppeteer-core-v22.11.1) (2024-06-17)
+
+
+### Bug Fixes
+
+* connection closed error should be a rejected promise ([#12575](https://github.com/puppeteer/puppeteer/issues/12575)) ([e36ce8b](https://github.com/puppeteer/puppeteer/commit/e36ce8bee18b4a8c7bf4c0692269d0095d186d06))
+* ensure selector parser falls back to CSS ([#12585](https://github.com/puppeteer/puppeteer/issues/12585)) ([80783fe](https://github.com/puppeteer/puppeteer/commit/80783fef5a298d2c57f64415f1882d0b051625ef))
+* implement nested selector parsing ([#12587](https://github.com/puppeteer/puppeteer/issues/12587)) ([3874300](https://github.com/puppeteer/puppeteer/commit/38743007159beedcad8571c08c3320235eb93f76))
+* roll to Chrome 126.0.6478.61 (r1300313) ([#12586](https://github.com/puppeteer/puppeteer/issues/12586)) ([772e088](https://github.com/puppeteer/puppeteer/commit/772e088f9cc566832b36066c3a6627b5afd47769))
+
 ## [22.11.0](https://github.com/puppeteer/puppeteer/compare/puppeteer-core-v22.10.1...puppeteer-core-v22.11.0) (2024-06-12)
 
 
